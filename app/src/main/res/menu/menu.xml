@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/configuracoes"
+        android:title="Favoritos"
+        android:icon="@drawable/outline_format_list_bulleted_24"
+        />
+
+    <item
+        android:title="Home"
+        android:icon="@drawable/outline_home_24"
+        android:id="@+id/home"/>
+
+    <item
+        android:id="@+id/conta"
+        android:title="Conta"
+        android:icon="@drawable/baseline_account_circle_24"
+        />
+</menu>
