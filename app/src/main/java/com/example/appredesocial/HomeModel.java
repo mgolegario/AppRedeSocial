@@ -5,25 +5,25 @@ import android.widget.ImageView;
 public class HomeModel {
     String nome, tempo;
     Integer likes;
-    Integer img;
+    String msg;
 
      public HomeModel() {
      }
 
 
-    public HomeModel(String nome, String tempo, Integer likes, Integer img) {
+    public HomeModel(String nome, String tempo, Integer likes, String msg) {
         this.nome = nome;
         this.tempo = tempo;
         this.likes = likes;
-        this.img = img;
+        this.msg = msg;
     }
 
-    public Integer getImg() {
-        return img;
+    public String getMsg() {
+        return msg;
     }
 
-    public void setImg(Integer img) {
-        this.img = img;
+    public void setMsg(String img) {
+        this.msg = img;
     }
 
     public Integer getLikes() {

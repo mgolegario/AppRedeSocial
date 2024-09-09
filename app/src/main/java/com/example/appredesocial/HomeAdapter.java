@@ -1,6 +1,7 @@
 package com.example.appredesocial;
 
 import android.content.Context;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,6 +11,8 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.bumptech.glide.Glide;
 
 import java.util.List;
 
@@ -32,11 +35,11 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.ViewHolder>{
 
         @Override
         public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
+
             holder.nome.setText(homeModelList.get(position).getNome());
+            holder.msg.setText(homeModelList.get(position).getMsg());
             holder.likes.setText(homeModelList.get(position).getLikes());
             holder.tempo.setText(homeModelList.get(position).getTempo());
-            holder.img.setImageResource(homeModelList.get(position).getImg());
-
         }
 
         @Override
@@ -45,8 +48,8 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.ViewHolder>{
         }
 
         public class ViewHolder extends RecyclerView.ViewHolder{
-            ImageView img;
-            TextView nome, tempo, likes;
+
+            TextView nome, tempo, likes, msg;
 
             public ViewHolder(@NonNull View itemView) {
                 super(itemView);
@@ -54,7 +57,7 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.ViewHolder>{
                 nome = itemView.findViewById(R.id.tv_nome);
                 likes = itemView.findViewById(R.id.tv_likes);
                 tempo = itemView.findViewById(R.id.tv_tempo);
-                img = itemView.findViewById(R.id.img);
+                msg = itemView.findViewById(R.id.msg);
 
 
 

@@ -44,11 +44,11 @@ public class Home extends AppCompatActivity {
                 int itemId = menuItem.getItemId();
 
                 if (itemId == R.id.home){
-                   // homeClicked();
+                   homeClicked();
                 }else if (itemId == R.id.conta){
-                  //  contaClicked();
+                   newsClicked();
                 } else if (itemId == R.id.configuracoes){
-                  //  configuracoesClicked();
+                    configuracoesClicked();
                 }
 
 
@@ -63,7 +63,7 @@ public class Home extends AppCompatActivity {
             }
 
         });
-       // homeClicked();
+        homeClicked();
     }
 
     private void loadFragment(Fragment fragment){
@@ -82,15 +82,15 @@ public class Home extends AppCompatActivity {
         fragmentTransaction.commit();
     }
 
-    /*
+
     private void homeClicked(){
         loadFragment(new HomeFragment());
     }
-    private void contaClicked(){
-        loadFragment(new DepartamentosFragment());
+    private void newsClicked(){
+        loadFragment(new ContaFragment());
     }
     private void configuracoesClicked(){
-        loadFragment(new FavoritosFragment());
+        loadFragment(new ConfiguracoesFragment());
     }
-*/
+
 }
