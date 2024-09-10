@@ -38,7 +38,7 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.ViewHolder>{
 
             holder.nome.setText(homeModelList.get(position).getNome());
             holder.msg.setText(homeModelList.get(position).getMsg());
-            holder.likes.setText(homeModelList.get(position).getLikes());
+            holder.likes.setText(homeModelList.get(position).getLikes().toString());
             holder.tempo.setText(homeModelList.get(position).getTempo());
         }
 

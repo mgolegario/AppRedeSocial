@@ -31,7 +31,16 @@ public class HomeFragment extends Fragment {
         descRec.setLayoutManager(new LinearLayoutManager(getActivity(), RecyclerView.VERTICAL, false));
         descRec.setAdapter(homeAdapter);
 
-        homeModelList.add(new HomeModel("caralegal", "Há 5 minutos", 384, "https://www.google.com/url?sa=i&url=https%3A%2F%2Fcursinhoparamedicina.com.br%2Fblog%2Fgeografia%2Fpaisagem-em-geografia%2F&psig=AOvVaw3QwkjtgIsyHH8kGuECZELo&ust=1726010629460000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCJi6v-WAt4gDFQAAAAAdAAAAABAE"));
+        homeModelList.add(new HomeModel("caralegal", "Há 5 minutos", 384, "salve tropaaaa novo aqui e vcs"));
+        homeModelList.add(new HomeModel("Alexandre de Moraes", "Há 44 minutos", 43928, "👀"));
+        homeModelList.add(new HomeModel("Calleri", "Há 1 minuto", 3844324, "São Paulo pra sempre! Chupa Corinthians!"));
+        homeModelList.add(new HomeModel("Luciano", "Há 2 segundos", 5345, "Calleri muito engraçado 🤣🤣🤣"));
+        homeModelList.add(new HomeModel("Mario", "Há 34 minutos", 14325, "Pelo menos tem uma nova rede pra twettar."));
+        homeModelList.add(new HomeModel("Usuario Desconhecido", "Há 51 minutos", 5436, "Testando por aqui..."));
+        homeModelList.add(new HomeModel("tododiaumafrasesobreocorinthians", "Há 57 minutos", 43242356, "O corinthians é o menor time do mundo"));
+        homeModelList.add(new HomeModel("FlowPodcast", "Há 12 minutos", 899564, "Já já episódio com Mario, nosso novo presidente!"));
+        homeModelList.add(new HomeModel("caralegal", "Há 16 minutos", 8765, "teste teste teste teste"));
+
         homeAdapter.notifyDataSetChanged();
         return v;
     }

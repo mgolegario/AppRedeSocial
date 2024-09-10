@@ -9,6 +9,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
+        android:gravity="center"
         android:background="#1b1b1b"
         android:padding="5dp">
 
@@ -21,13 +22,13 @@
             android:layout_marginTop="25dp"
             android:textColor="#FFF"
             android:fontFamily="@font/ubuntu"
-            android:layout_gravity="center"/>
+            />
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rec_descubra"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="5dp" />
+            android:layout_marginTop="10dp" />
     </LinearLayout>
 
 </FrameLayout>
